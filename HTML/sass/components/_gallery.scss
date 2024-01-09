@@ -1,0 +1,47 @@
+.gallery{
+  display: none;
+
+  @media screen and (min-width: $desktop){
+    display: block;
+  }
+}
+
+.img-list {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  height: 294px;
+}
+
+.img-list__thumb {
+  position: relative;
+}
+
+.thumb__overlay {
+  position: absolute;
+  bottom: 0;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  margin: 0;
+
+  color: #fff;
+  background-color: rgba(47, 48, 58, 0.8);
+
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
+
+  &--first {
+    padding-left: 107px;
+    padding-right: 107px;
+  }
+  &--second {
+    padding-left: 113px;
+    padding-right: 112px;
+  }
+  &--third {
+    padding-left: 95px;
+    padding-right: 94px;
+  }
+}

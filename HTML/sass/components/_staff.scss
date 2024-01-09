@@ -1,0 +1,93 @@
+.staff {
+  background-color: #f5f4fa;
+}
+
+.work-cards {
+  //   position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  @media screen and (min-width: $tablet) {
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  @media screen and (min-width: $desktop){
+    flex-wrap: nowrap;
+  }
+}
+
+.staff-box {
+  background-color: white;
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14),
+    0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+    width: calc((100% - 30px) / 2);
+  }
+
+  @media screen and (min-width: $desktop){
+    width: calc((100% - 30px) / 4);
+  }
+}
+
+.staff-box__name {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  text-align: center;
+
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.48px;
+}
+
+.staff-box__profession {
+  // margin-top: 0;
+  margin-bottom: 16px;
+  text-align: center;
+
+  color: $second-text-color;
+
+  font-size: 16px;
+  line-height: 1.2;
+  letter-spacing: 0.48px;
+}
+
+//ICONS and HOLDERS
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 24px;
+  gap: 10px;
+
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    width: 44px;
+    height: 44px;
+
+    transition: color $animation-cubic, background-color $animation-cubic;
+    color: #afb1b8;
+    background-color: #fff;
+    list-style-type: none;
+    font-style: normal;
+
+    &:hover,
+    &:focus {
+      background-color: $accent-color;
+      color: #fff;
+    }
+  }
+}
+
+.social-icons__icon {
+  width: 20px;
+  height: 20px;
+
+  fill: currentColor;
+}
