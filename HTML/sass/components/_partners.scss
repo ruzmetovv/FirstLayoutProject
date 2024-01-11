@@ -1,13 +1,13 @@
 .customers-list {
-   display: flex;
-   flex-wrap: wrap;
-   gap: 30px;
-   justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
 
-//   li {
-//     display: flex;
-//   }
- }
+  //   li {
+  //     display: flex;
+  //   }
+}
 
 .customers__link {
   display: flex;
@@ -28,7 +28,7 @@
     border: 1px solid $accent-color;
   }
 
-  @media screen and (min-width: $desktop){
+  @media screen and (min-width: $desktop) {
     width: 170px;
   }
 }

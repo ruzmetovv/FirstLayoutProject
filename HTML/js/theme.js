@@ -10,13 +10,13 @@ document.addEventListener("DOMContentLoaded", function () {
   if (savedTheme) {
     defaultStylesheet.setAttribute("href", savedTheme);
   } else {
-    defaultStylesheet.setAttribute("href", "./css/dark-main.min.css");
+    defaultStylesheet.setAttribute("href", "./styles/dark-main.min.css");
   }
 
   themeCheckbox.checked = isChecked;
 
   themeCheckbox.addEventListener("change", function () {
-    const newStylesheet = themeCheckbox.checked ? "./css/main.min.css" : "./css/dark-main.min.css";
+    const newStylesheet = themeCheckbox.checked ? "./sass/main.css" : "./styles/dark-main.min.css";
 
     // Устанавливаем новый файл CSS в зависимости от состояния чекбокса
     defaultStylesheet.setAttribute("href", newStylesheet);
