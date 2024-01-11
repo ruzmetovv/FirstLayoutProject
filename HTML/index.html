@@ -5,12 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebStudio</title>
 
-    <link rel="stylesheet" href="./css/main.min.css" />
+    <link rel="stylesheet" id="defaultStylesheet" href="./css/dark-main.min.css" />
+    <link rel="stylesheet" href="/css/theme-button.css" />
+    <script src="/js/theme.js" defer></script>
   </head>
   <body>
     <header class="header">
       <div class="container container--flex container--relative">
         <a class="logo" href="./index.html"><span class="logo__span">Web</span>Studio</a>
+
+        <div class="switch">
+          <input id="themeCheckbox" type="checkbox" class="checkbox" aria-label="переключатель темы" />
+        </div>
 
         <button type="button" class="header__menu-button js-open-menu">
           <svg class="header__burger-icon" aria-label="переключатель мобильного меню">
@@ -401,5 +407,6 @@
     ></script>
     <script src="./js/modal.js"></script>
     <script src="./js/menu.js"></script>
+    <input type="hidden" id="currentTheme" value="./css/dark-main.min.css" />
   </body>
 </html>

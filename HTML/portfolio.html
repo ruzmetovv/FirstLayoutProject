@@ -4,24 +4,29 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
-    <link rel="stylesheet" href="./css/main.min.css" />
+    <link rel="stylesheet" id="defaultStylesheet" href="./css/dark-main.min.css" />
+    <link rel="stylesheet" href="/css/theme-button.css" />
+    <script src="/js/theme.js" defer></script>
   </head>
   <body>
     <header class="header">
       <div class="container container--flex container--relative">
         <a class="logo" href="./index.html"><span class="logo__span">Web</span>Studio</a>
+
+        <div class="switch">
+          <input id="themeCheckbox" type="checkbox" class="checkbox" aria-label="переключатель темы" />
+        </div>
+
         <button type="button " class="header__menu-button js-open-menu">
           <svg class="header__burger-icon" aria-label="переключатель мобильного меню">
             <use href="/sprite.svg#icon-burger"></use>
           </svg>
         </button>
 
-        
-
         <div class="header__container">
           <nav class="main-nav">
             <ul class="main-nav__list">
-              <li><a class="main-nav__link " href="./index.html">Студія</a></li>
+              <li><a class="main-nav__link" href="./index.html">Студія</a></li>
               <li><a class="main-nav__link main-nav__link--active" href="./portfolio.html">Портфоліо</a></li>
               <li><a class="main-nav__link" href="./index.html">Контакти</a></li>
             </ul>
@@ -271,7 +276,7 @@
           </ul>
           <form class="footer-form">
             <label class="footer-form__slogan" for="spam">Підпишіться на розсилку</label>
-            <input class="footer-form__inpit" type="email" name="spam" id="spam" placeholder="E-mail" />
+            <input class="footer-form__input" type="email" name="spam" id="spam" placeholder="E-mail" />
             <button class="footer-form__submit" type="submit">
               Підписатися
               <svg class="footer-form__icon">
@@ -289,7 +294,7 @@
       </button>
 
       <ul class="modal-menu__nav-list">
-        <li><a href="index.html" class="nav-list__link ">Студія</a></li>
+        <li><a href="index.html" class="nav-list__link">Студія</a></li>
         <li><a href="" class="nav-list__link nav-list__link--active">Портфоліо</a></li>
         <li><a href="" class="nav-list__link">Контакти</a></li>
         <li><a href="tel:+380961111111" class="nav-list__tel">+38 066 747 16 63</a></li>
@@ -303,7 +308,7 @@
         <li><a href="" class="SNetwork__item">LinkedIn</a></li>
       </ul>
     </div>
-    
+
     <script
       defer
       src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
@@ -311,5 +316,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="./js/menu.js"></script>
+    <input type="hidden" id="currentTheme" value="./css/dark-main.min.css" />
   </body>
 </html>

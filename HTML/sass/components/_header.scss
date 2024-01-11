@@ -1,3 +1,5 @@
+
+
 .header__container {
   display: none;
   //display: flex;
@@ -17,7 +19,7 @@
     margin-right: 50px;
   }
 
-  @media screen and (min-width: $desktop){
+  @media screen and (min-width: $desktop) {
     margin-left: 93px;
   }
 }
@@ -72,14 +74,13 @@
     }
   }
 
-  @media screen and (min-width: $desktop){
+  @media screen and (min-width: $desktop) {
     display: flex;
     margin-left: 322px;
 
-    li:first-child{
+    li:first-child {
       margin-right: 30px;
     }
-    
   }
 }
 
