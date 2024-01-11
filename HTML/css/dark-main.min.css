@@ -534,12 +534,7 @@ section {
     padding: 10px 32px;
   }
 }
-.hero__button:before {
-  content: "Замовити послугу";
-}
-.hero__button:hover::before {
-  content: "Бог існує без місця";
-}
+
 .hero__button:hover,
 .hero__button:focus {
   background-color: #4f15a1;

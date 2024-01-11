@@ -5,7 +5,7 @@
 
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/hero/phone.jpg);
   background-size: cover;
-   background-position: center center;
+  background-position: center center;
   background-repeat: no-repeat;
 
   background-color: #2f303a;
@@ -14,7 +14,7 @@
   @media screen and (min-width: 570px) and (max-width: 1199px) {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url(/images/hero/tablet.jpg);
-      //background-size: auto;
+    //background-size: auto;
   }
 
   @media screen and (min-width: $desktop) {
@@ -62,14 +62,6 @@
 
   @media screen and (min-width: $desktop) {
     padding: 10px 32px;
-  }
-
-  &:before {
-    content: "Замовити послугу";
-  }
-
-  &:hover::before {
-    content: "Бог існує без місця";
   }
 
   &:hover,

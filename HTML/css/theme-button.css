@@ -3,11 +3,10 @@
   transform: translateY(-50%);
   position: absolute;
   right: 153px;
-
 }
 
-@media screen and (min-width: 768px){
-  .switch{
+@media screen and (min-width: 768px) {
+  .switch {
     right: 546px;
   }
 }
