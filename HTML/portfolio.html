@@ -4,9 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
+
     <link rel="stylesheet" id="defaultStylesheet" href="./styles/dark-main.min.css" />
     <link rel="stylesheet" href="./styles/theme-button.css" />
-    <script src="/js/theme.js" defer></script>
+    <script src="./js/theme.js" defer></script>
   </head>
   <body>
     <header class="header">
@@ -17,7 +18,7 @@
           <input id="themeCheckbox" type="checkbox" class="checkbox" aria-label="переключатель темы" />
         </div>
 
-        <button type="button " class="header__menu-button js-open-menu">
+        <button type="button" class="header__menu-button js-open-menu">
           <svg class="header__burger-icon" aria-label="переключатель мобильного меню">
             <use href="./sprite.svg#icon-burger"></use>
           </svg>
@@ -310,11 +311,12 @@
     </div>
 
     <script
-      defer
-      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
-      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-      crossorigin="anonymous"
+       defer
+       src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+       integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+       crossorigin="anonymous"
     ></script>
+    <script src="./js/modal.js"></script>
     <script src="./js/menu.js"></script>
     <input type="hidden" id="currentTheme" value="./styles/dark-main.min.css" />
   </body>
